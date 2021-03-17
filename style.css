@@ -7,6 +7,125 @@ html,
 body {
   margin: 0;
   padding: 0;
+  font-size: 18px;
+  background: hsl(0deg, 0%, 60%);
 }
 
-/* Add styles here! */
+/* font styling */
+
+h1 {
+  font-size: 2rem;
+  margin-bottom: 48px;
+  margin-top: 0;
+}
+
+strong {
+  color: green;
+}
+
+p {
+  font-size: 1.25rem;
+}
+
+h2 {
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+/* layout */
+
+header {
+  background-color: white;
+  padding-bottom: 64px;
+}
+
+header {
+  border-bottom: 8px solid hsl(0deg, 0%, 40%);
+}
+
+.max-width-wrapper {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+@media (min-width: 768px) {
+  .max-width-wrapper {
+    margin: 0;
+    margin-left: 24px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .max-width-wrapper {
+    max-width: 650px;
+    margin: 0 auto;
+  }
+}
+
+.intro-chunk {
+  padding-top: 96px;
+}
+
+@media (min-width: 1024px) {
+  .intro-chunk {
+    width: 65%;
+  }
+}
+
+.card {
+  background: white;
+  margin-top: 96px;
+  margin-left: -37.5px;
+  margin-right: -37.5px;
+  padding-top: 8px;
+  padding-bottom: 24px;
+}
+
+.card p {
+  display: none;
+}
+
+@media (min-width: 768px) {
+  .card {
+    margin-right: -342px;
+    padding-top: 8px;
+    border-bottom: 8px solid hsl(0deg, 0%, 40%);
+  }
+
+  .card p {
+    display: block;
+    padding-left: 37.5px;
+    padding-right: 32px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .card {
+    margin-right: 0;
+    padding-top: 8px;
+  }
+
+  .card p {
+    font-size: 1rem;
+  }
+}
+
+.indented-heading {
+  width: 90%;
+  padding: 16px 37.5px;
+  background-color: hsl(45deg, 100%, 50%);
+  border-bottom: 8px solid hsl(45deg, 100%, 40%);
+}
+
+@media (min-width: 768px) {
+  .indented-heading {
+    width: 60%;
+  }
+}
+
+@media (min-width: 1024px) {
+  .indented-heading {
+    margin-left: -16px;
+    padding-left: 53.5px;
+  }
+}
